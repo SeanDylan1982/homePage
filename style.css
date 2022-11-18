@@ -1,0 +1,273 @@
+html {
+  font-family: 'Poppins', 'Asap', sans-serif;
+  z-index: 1;
+}
+
+.show-btn {
+  visibility: visible;
+  z-index: 99;
+}
+
+.hide-btn {
+  visibility: hidden;
+  z-index: 1;
+}
+
+.themeButtons {
+  position: absolute;
+  top: -45px;
+  left: 5px;
+  z-index: 99;
+}
+
+.lightModeBtn {
+  position: absolute;
+  left: 5px;
+  z-index: 1;
+  box-shadow: 0 0 5px #f1f1f1;
+  border-radius: 10px;
+}
+
+.darkModeBtn {
+  position: absolute;
+  left: 60px;
+  z-index: 1;
+  box-shadow: 0 0 5px #f1f1f1;
+  border-radius: 10px;
+}
+
+.colorPicker,
+.colorPicker-container {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0 0 5px #f1f1f1;
+  border-radius: 10px;
+}
+
+.header-bar {
+  position: fixed;
+  left: 0;
+  background-color: #343763;
+  width: 100vw;
+  height: 50px;
+  box-shadow: 0 0 10px #1a1a1a;
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.header-links {
+  position: relative;
+  text-align: center;
+  top: -40px;
+  margin: 0 30px;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.profile-pic img {
+  position: relative;
+  top: 0;
+  left: 1050px;
+  width: 45px;
+  height: 45px;
+  border-radius:50%;
+  z-index: 2;
+}
+
+.header-link button {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+
+.sidebar-list img{
+  position: relative;
+  display: flex;
+  top: 10px;
+  margin: 20px;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  left: 15px;
+  z-index: 2;
+  border: 2px solid #343763;
+}
+
+.sidebar-list {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 220px;
+  height: 93.5vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  background-color: #f1f1f1;
+  color: #1a1a1a;
+  border: 0 solid #1a1a1a;
+  box-shadow: 0 0 15px #1a1a1a;
+  text-decoration: none;
+}
+
+.sidebar-list a {
+  position: relative;
+  text-decoration: none;
+  color: #1a1a1a;
+  padding: 5px;
+  z-index: 2;
+  top: 20px;
+}
+
+.sidebar-list button {
+  position: relative;
+  text-decoration: none;
+  color: #1a1a1a;
+  margin: 5px 0;
+  z-index: 2;
+  top: 0;
+}
+
+.mainHome,
+.mainAbout,
+.mainPortfolio,
+.mainResume,
+.mainContact {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100vw;
+  height: 94vh;
+}
+
+.mainHome h1,
+.mainAbout h1,
+.mainPortfolio h1,
+.mainResume h1,
+.mainContact h1 {
+  position: fixed;
+  top: 40px;
+  left: 10%;
+  text-align: center;
+  font-weight: bold;
+  width: 99vw;
+  height: 93vh;
+  font-size: 5rem;
+  color: #1a1a1a99;
+}
+
+.mainHome h2,
+.mainAbout h2,
+.mainPortfolio h2,
+.mainResume h2,
+.mainContact h2 {
+  position: fixed;
+  top: 60px;
+  left: 10%;
+  text-align: center;
+  font-weight: bold;
+  width: 99vw;
+  height: 93vh;
+  font-size: 3rem;
+  color: #343763;
+}
+
+.contact-form {
+  background-color: #f1f1f1;
+  color: #1a1a1a;
+  position: relative;
+  top: 15%;
+  /* width: 500px; */
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.mainResume iframe {
+  background-color: #f1f1f1;
+  color: #1a1a1a;
+  position: relative;
+  top: 10%;
+  left: 22%;
+  width: 99vw;
+  height: 100vh;
+  border-radius: 10px;
+}
+
+.mainPortfolio iframe {
+  position: relative;
+  top: 5px;
+  width: 99vw;
+  height: 99vh;
+  z-index: 0;
+  border-radius: 10px;
+  scale: 0.8;
+}
+
+.apps-container,
+.games-container {
+  position: relative;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 95vh;
+  box-shadow: 0 0 10px #1a1a1a;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.apps-icon-container,
+.games-icon-container {
+  position: relative;
+  justify-content: center;
+  width: 115px;
+  text-align: center;
+  margin: 5px 15px 5px 15px;
+  padding: 5px 15px 5px 15px;
+  color: #f1f1f1;
+}
+
+img {
+  width: 75px;
+  height: 75px;
+  border-radius: 20px;
+}
+
+img:hover {
+  scale: 1.1;
+  transition: all .1s ease-in-out;
+  cursor: pointer;
+}
+
+.appsWindows iframe {
+  position: relative;
+  top: 120px;
+  left: 4.5%;
+  width: 91vw;
+  height: 76vh;
+  border-radius: 10px;
+  box-shadow: 0 0 25px #1a1a1a;
+  scale: 1;
+  display: none;
+}
+
+.appsWindows i {
+  position: absolute;
+  z-index: 3;
+  top: 60px;
+  right: 65px;
+}
+
+.hideAll {
+  visibility: hidden;
+  z-index: -99;
+}
+
+.showAll {
+  visibility: visible;
+  z-index: 99;
+}
