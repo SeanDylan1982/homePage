@@ -43,7 +43,11 @@
             },
             {
                 "required": false,
-                "name": "name"
+                "name": "first_name"
+            },
+            {
+                "required": false,
+                "name": "last_name"
             }
         ]
     },
