@@ -15,6 +15,17 @@
         },
         "disabled": false
     },
+    "oauth2-apple": {
+        "name": "oauth2-apple",
+        "type": "oauth2-apple",
+        "config": {
+            "clientId": "a0cae4756834737018dcc552cce7c395"
+        },
+        "secret_config": {
+            "clientSecret": "users-mydb-uopxr"
+        },
+        "disabled": false
+    },
     "oauth2-facebook": {
         "name": "oauth2-facebook",
         "type": "oauth2-facebook",
