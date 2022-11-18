@@ -1,0 +1,18 @@
+{
+    "api-key": {
+        "name": "api-key",
+        "type": "api-key",
+        "disabled": true
+    },
+    "local-userpass": {
+        "name": "local-userpass",
+        "type": "local-userpass",
+        "config": {
+            "confirmEmailSubject": "Please confirm your login details",
+            "emailConfirmationUrl": "https://homepage-basic.netlify.app/scripts/",
+            "resetPasswordSubject": "Reset your password",
+            "resetPasswordUrl": "https://homepage-basic.netlify.app/scripts/"
+        },
+        "disabled": false
+    }
+}
