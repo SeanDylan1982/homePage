@@ -15,6 +15,27 @@
         },
         "disabled": false
     },
+    "oauth2-facebook": {
+        "name": "oauth2-facebook",
+        "type": "oauth2-facebook",
+        "config": {
+            "clientId": "a0cae4756834737018dcc552cce7c395"
+        },
+        "secret_config": {
+            "clientSecret": "users-mydb-uopxr"
+        },
+        "disabled": true,
+        "metadata_fields": [
+            {
+                "required": false,
+                "name": "email"
+            },
+            {
+                "required": false,
+                "name": "name"
+            }
+        ]
+    },
     "oauth2-google": {
         "name": "oauth2-google",
         "type": "oauth2-google",
