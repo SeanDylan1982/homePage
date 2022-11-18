@@ -35,7 +35,7 @@
         "secret_config": {
             "clientSecret": "users-mydb-uopxr"
         },
-        "disabled": true,
+        "disabled": false,
         "metadata_fields": [
             {
                 "required": false,
@@ -44,10 +44,6 @@
             {
                 "required": false,
                 "name": "first_name"
-            },
-            {
-                "required": false,
-                "name": "last_name"
             }
         ]
     },
