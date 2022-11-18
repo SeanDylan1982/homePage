@@ -14,5 +14,17 @@
             "resetPasswordUrl": "https://homepage-basic.netlify.app/scripts/"
         },
         "disabled": false
+    },
+    "oauth2-google": {
+        "name": "oauth2-google",
+        "type": "oauth2-google",
+        "config": {
+            "clientId": "a0cae4756834737018dcc552cce7c395",
+            "openId": true
+        },
+        "secret_config": {
+            "clientSecret": "users-mydb-uopxr"
+        },
+        "disabled": false
     }
 }
