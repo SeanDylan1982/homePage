@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "637766f3480e613ba38c9a78"
+  },
+  "firstName": "sean",
+  "lastName": "patterson",
+  "email": "seandylanpatterson@gmail.com",
+  "password": "LL0921jj",
+  "confirm": "LL0921jj",
+  "timestamp": {
+    "$timestamp": {
+      "t": 1668769604,
+      "i": 1
+    }
+  }
+}]

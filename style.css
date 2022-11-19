@@ -252,7 +252,6 @@ img:hover {
   border-radius: 10px;
   box-shadow: 0 0 25px #1a1a1a;
   scale: 1;
-  display: none;
 }
 
 .appsWindows i {
@@ -270,4 +269,40 @@ img:hover {
 .showAll {
   visibility: visible;
   z-index: 99;
+}
+form {
+  position: relative;
+  top: 150px;
+  left: 30%;
+  padding: 10px 0;
+  max-width: 500px;
+}
+
+form label {
+  position: relative;
+  left: 14px;
+  padding: 10px 0;
+}
+
+#login {
+  position: relative;
+  display: flex;
+  top: -68px;
+  left: 100px;
+  z-index: 2;
+  height: 50px;
+  width: 150px;
+  justify-content: center;
+  margin: 15px 20px;
+  padding: 10px 20px;
+  background-color: #6771ff;
+}
+#login span {
+  position: relative;
+  margin: 0 10px;
+}
+
+#login i {
+  position: relative;
+  margin: 5px 1px;
 }
