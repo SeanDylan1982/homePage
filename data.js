@@ -19,7 +19,7 @@ const apps = [
   },
   {
     id: 4,
-    name: "barter-better",
+    name: "Barter-Better2",
     icon: "./img/barter-better2-icon.png",
     url: "https://barter-better-basic.netlify.app/",
   },
