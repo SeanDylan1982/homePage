@@ -1,21 +1,29 @@
 <?php
-	$firstName = $_POST['firstName'];
-	$lastName = $_POST['lastName'];
+	$name = $_POST['name'];
+	$surname = $_POST['surname'];
 	$email = $_POST['email'];
 	$password = $_POST['password'];
 	$confirm = $_POST['confirm'];
+  $host="127.0.0.1";
+  $port=3306;
+  $socket="";
+  $user="root";
+  $password="";
+  $dbname="userlogin";
 
 	// Database connection
-	$conn = new Mysqli('localhost','root','','userLogin');
-	if($conn -> connect_error){
-		echo "$conn -> connect_error";
-		die("Connection Failed: ". $conn->connect_error);
-	} else {
-		$stmt = $conn->prepare("INSERT INTO `userData`(`firstName`, `lastName`, `email`, `password`, `confirm`) VALUES (?, ?, ?, ?, ?)");
-		$stmt -> bind_param("sssss", $firstName, $lastName, $email, $password, $confirm);
-		$stmt -> execute();
-		echo "Registered successfully...";
-		$stmt -> close();
-		$conn -> close();
-	}
+	$con = new Mysqli($host, $user, $password, $dbname, $port, $socket);
+	
+	$sql = "INSERT INTO `userdata`(`name`, `surname`, `email`, `password`, `confirm`) VALUES (\"?\", \"?\", \"?\", \"?\", \"?\");";
+
+	$sql = "INSERT INTO `userdata` (`uid`, `name`, `surname`, `email`, `password`, `confirm`, `timestamp`) VALUES (?, ?, ?, ?, ?, ?, ?)";
+
+	$stmt=$con->prepare("INSERT INTO `userData`(`firstName`, `lastName`, `email`, `password`, `confirm`) VALUES (?, ?, ?, ?, ?)");
+  $stmt->bind_param("issssss", $uid, $name, $surname, $email, $password, $confirm, $timestamp);
+	$stmt->execute();
+	echo "Registered successfully...";
+	$stmt->close();
+	$con->close();
+
+	$sql = "INSERT INTO `userdata` (`uid`, `name`, `surname`, `email`, `password`, `confirm`, `timestamp`) VALUES (\'0001\', \'admin\', \'admin\', \'seandylanpatterson@gmail.com\', \'LL0921jj\', \'LL0921jj\', current_timestamp());";
 ?>

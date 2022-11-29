@@ -3,86 +3,42 @@ html {
   z-index: 1;
 }
 
-.show-btn {
-  visibility: visible;
-  z-index: 99;
-}
-
-.hide-btn {
-  visibility: hidden;
-  z-index: 1;
-}
-
 .themeButtons {
-  position: absolute;
-  top: -45px;
-  left: 5px;
-  z-index: 99;
-}
-
-.lightModeBtn {
-  position: absolute;
-  left: 5px;
-  z-index: 1;
-  box-shadow: 0 0 5px #f1f1f1;
-  border-radius: 10px;
-}
-
-.darkModeBtn {
-  position: absolute;
-  left: 60px;
-  z-index: 1;
-  box-shadow: 0 0 5px #f1f1f1;
-  border-radius: 10px;
+  position: fixed;
+  top: 5px;
+  left: 10px;
+  z-index: 2;
 }
 
 .colorPicker,
 .colorPicker-container {
-  position: absolute;
-  left: 0;
-  z-index: 1;
+  position: fixed;
+  left: 5px;
+  top: 5px;
+  z-index: 2;
   box-shadow: 0 0 5px #f1f1f1;
   border-radius: 10px;
 }
 
-.header-bar {
+#header {
   position: fixed;
-  left: 0;
-  background-color: #343763;
-  width: 100vw;
-  height: 50px;
-  box-shadow: 0 0 10px #1a1a1a;
-  text-decoration: none;
-  color: #f1f1f1;
-}
-
-.header-links {
-  position: relative;
-  text-align: center;
-  top: -40px;
-  margin: 0 30px;
-}
-
-.header-links a {
-  text-decoration: none;
-  color: #f1f1f1;
-}
-
-.profile-pic img {
-  position: relative;
-  top: 0;
-  left: 1050px;
-  width: 45px;
-  height: 45px;
-  border-radius:50%;
+  display: flex;
+  flex-direction: column;
+  top: -15px;
+  left: 0px;
   z-index: 2;
-}
-
-.header-link button {
-  text-decoration: none;
+  height: 50px;
+  width: 100%;
+  border: 1px solid #343763;
+  justify-content: center;
+  margin: 15px 20px;
+  padding: 10px 20px;
+  background-color: #343763;
+  left: -20px;
+  box-shadow: 0 0 10px #1a1a1a;
   color: #f1f1f1;
+  text-decoration: none;
 }
-
 
 .sidebar-list img{
   position: relative;
@@ -93,17 +49,17 @@ html {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  left: 15px;
+  left: 5px;
   z-index: 2;
   border: 2px solid #343763;
 }
 
 .sidebar-list {
-  position: absolute;
+  position: fixed;
   top: 50px;
   left: 0;
-  width: 220px;
-  height: 93.5vh;
+  width: 205px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   z-index: 2;
@@ -116,12 +72,24 @@ html {
 
 .sidebar-list a {
   position: relative;
+  left: -5px;
+  text-decoration: none;
+  padding: 5px;
+  z-index: 2;
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+.sidebar-list i {
+  position: relative;
+  left: -5px;
   text-decoration: none;
   color: #1a1a1a;
   padding: 5px;
   z-index: 2;
-  top: 20px;
+  font-size: 1.4rem;
 }
+
 
 .sidebar-list button {
   position: relative;
@@ -129,99 +97,50 @@ html {
   color: #1a1a1a;
   margin: 5px 0;
   z-index: 2;
-  top: 0;
-}
-
-.mainHome,
-.mainAbout,
-.mainPortfolio,
-.mainResume,
-.mainContact {
-  position: fixed;
   top: 50px;
-  left: 0;
+}
+
+.mainHome {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  top: 55px;
   width: 100vw;
-  height: 94vh;
-}
-
-.mainHome h1,
-.mainAbout h1,
-.mainPortfolio h1,
-.mainResume h1,
-.mainContact h1 {
-  position: fixed;
-  top: 40px;
-  left: 10%;
-  text-align: center;
-  font-weight: bold;
-  width: 99vw;
-  height: 93vh;
-  font-size: 5rem;
-  color: #1a1a1a99;
-}
-
-.mainHome h2,
-.mainAbout h2,
-.mainPortfolio h2,
-.mainResume h2,
-.mainContact h2 {
-  position: fixed;
-  top: 60px;
-  left: 10%;
-  text-align: center;
-  font-weight: bold;
-  width: 99vw;
-  height: 93vh;
-  font-size: 3rem;
-  color: #343763;
-}
-
-.contact-form {
-  background-color: #f1f1f1;
-  color: #1a1a1a;
-  position: relative;
-  top: 15%;
-  /* width: 500px; */
-  margin-left: 30%;
-  margin-right: 30%;
-}
-
-.mainResume iframe {
-  background-color: #f1f1f1;
-  color: #1a1a1a;
-  position: relative;
-  top: 10%;
-  left: 22%;
-  width: 99vw;
   height: 100vh;
-  border-radius: 10px;
+  left: 206px;
+  z-index: 2;
 }
 
-.mainPortfolio iframe {
+#apps {
   position: relative;
-  top: 5px;
-  width: 99vw;
-  height: 99vh;
-  z-index: 0;
-  border-radius: 10px;
-  scale: 0.8;
+  display: flex;
+  flex-wrap: wrap;
+  top: -70px;
+  bottom: 10px;
+  left: 10px;
+  width: 100vw;
+  /* height: 100vh; */
+  left: 10px;
+  z-index: 2;
+  margin: 10px 10px;
 }
 
-.apps-container,
-.games-container {
+.apps-container {
   position: relative;
   text-align: center;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 95vh;
+  width: 88vw;
+  height: 100vh;
   box-shadow: 0 0 10px #1a1a1a;
   display: flex;
   flex-wrap: wrap;
+  top: -5px;
+  z-index: 2;
 }
 
-.apps-icon-container,
-.games-icon-container {
+.apps-icon-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: center;
   width: 115px;
@@ -229,80 +148,64 @@ html {
   margin: 5px 15px 5px 15px;
   padding: 5px 15px 5px 15px;
   color: #f1f1f1;
+  margin: -20px 1px;
+  padding: -20px -5px;
 }
 
 img {
-  width: 75px;
-  height: 75px;
+  width: 70px;
+  height: 70px;
   border-radius: 20px;
+  margin: 20px -10px;
+  transition: all .2s ease-in-out;
+  background-color: #f1f1f1;
 }
 
 img:hover {
-  scale: 1.1;
-  transition: all .1s ease-in-out;
+  scale: 1.2;
+  transition: all .2s ease-in-out;
   cursor: pointer;
 }
 
-.appsWindows iframe {
+#login-container {
   position: relative;
-  top: 120px;
-  left: 4.5%;
-  width: 91vw;
-  height: 76vh;
-  border-radius: 10px;
-  box-shadow: 0 0 25px #1a1a1a;
-  scale: 1;
-}
-
-.appsWindows i {
-  position: absolute;
-  z-index: 3;
-  top: 60px;
-  right: 65px;
-}
-
-.hideAll {
-  visibility: hidden;
-  z-index: -99;
-}
-
-.showAll {
-  visibility: visible;
-  z-index: 99;
-}
-form {
-  position: relative;
-  top: 150px;
-  left: 30%;
-  padding: 10px 0;
-  max-width: 500px;
-}
-
-form label {
-  position: relative;
-  left: 14px;
-  padding: 10px 0;
+  background-color: transparent;
+  color: #f1f1f1;
+  text-decoration: none;
+  z-index: 1;
 }
 
 #login {
   position: relative;
-  display: flex;
-  top: -68px;
-  left: 100px;
-  z-index: 2;
-  height: 50px;
-  width: 150px;
-  justify-content: center;
-  margin: 15px 20px;
-  padding: 10px 20px;
-  background-color: #6771ff;
-}
-#login span {
-  position: relative;
-  margin: 0 10px;
+  font-size: 1.1rem;
+  top: -49px;
+  right: -1090px;
+  z-index: 1;
+  width: 300px;
+  height: 45px;
+  background-color: transparent;
+  color: #f1f1f1;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
-#login i {
+#login div {
   position: relative;
-  margin: 5px 1px;
+  background-color: transparent;
+  color: #f1f1f1;
+  text-decoration: none;
+  z-index: 1;
+  top: -49px;
+  right: 10px;
+}
+
+#search {
+  position: relative;
+  font-size: 1.1rem;
+  top: -46px;
+  left: 100px;
+  z-index: 1;
+  width: 455px;
+  height: 40px;
+  border-radius: 10px;
 }

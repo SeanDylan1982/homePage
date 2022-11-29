@@ -19,15 +19,15 @@
 </header>
 <body>
   <div data-netlify-identity-menu></div>
-  <div data-netlify-identity-button>Login with Netlify Identity</div>
-  <form action="./connect.php" method="POST" class="form-control">
+  <button class="login btn btn-success"><div data-netlify-identity-button> </button> </div>
+  <form action="connect.php" method="POST" class="form-control" data-netlify="true" name="login">
     <div class="form-group">
-      <label for="firstName">First Name</label>
-      <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Your first name..." autofocus/>
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" id="firstName" name="name" placeholder="Your first name..." autofocus/>
     </div>
     <div class="form-group">
-      <label for="lastName">Last Name</label>
-      <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Your last name..."/>
+      <label for="surname">Last Name</label>
+      <input type="text" class="form-control" id="lastName" name="surname" placeholder="Your last name..."/>
     </div>
     <div class="form-group">
       <label for="email">Email address</label>
@@ -44,7 +44,7 @@
     <br>
     <input type="hidden" name="form_submitted" value="1" />
     <div class="form-group">
-      <input type="submit" class="btn btn-success" value="Register"/><i class="fa fa-paper-plane"></i>
+      <button type="submit" class="btn btn-success" value="Register"/><i class="fa fa-paper-plane"></i> Register</button>
     </div>
   </form>
   <script src="./netlifyAuth.js"></script>
@@ -54,4 +54,3 @@
   <script src="./app.js"></script>
 </body>
 </html>
-
