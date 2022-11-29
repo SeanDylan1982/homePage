@@ -15,7 +15,7 @@ const apps = [
     id: 3,
     name: "Portfolio",
     icon: "./img/portfolio-icon.png",
-    url: "https://www.seanp.tk",
+    url: "https://seandylanpatterson-portfolio.netlify.app/",
   },
   {
     id: 4,
